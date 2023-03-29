@@ -1,0 +1,9 @@
+httpx
+websockets
+rich
+certifi
+prompt_toolkit
+regex
+requests
+aiogram
+json
