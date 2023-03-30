@@ -1,14 +1,14 @@
 {
     "version": 2,
     "builds": [
-      { "src": "src/app.py", "use": "@vercel/python" }
+      { "src": "./app.py", "use": "@vercel/python" }
     ],
     "routes": [
-      { "src": "/.*", "dest": "src/app.py" }
+      { "src": "/.*", "dest": "/app.py" }
     ],
     "env": {
       "BOT_TOKEN": "6160231980:AAGz70x3VQqYgKnVgXGx6o3R5wZaJzdBBVs",
-        "COOKIE_FILE": "src/cookies.json"
+        "COOKIE_FILE": "/cookies.json"
     }
   }
   
