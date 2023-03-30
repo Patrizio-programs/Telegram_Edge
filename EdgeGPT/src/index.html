@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EdgeGPT Chatbot</title>
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    async function sendMessage() {
+      const message = document.getElementById('message').value;
+      const response = await axios.post('/api/chatbot', { message });
+      const text = response.data.text;
+      document.getElementById('response').innerText = text;
+    }
+  </script>
+  <h1>EdgeGPT Chatbot</h1>
+  <h2>6160231980:AAGz70x3VQqYgKnVgXGx6o3R5wZaJzdBBVs</h2>
+  <input type="text" id="message">
+  <button onclick="sendMessage()">Send</button>
+  <p id="response"></p>
+</body>
+</html>

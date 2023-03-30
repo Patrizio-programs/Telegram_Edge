@@ -6,4 +6,3 @@ prompt_toolkit
 regex
 requests
 aiogram
-json
